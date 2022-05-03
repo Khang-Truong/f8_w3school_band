@@ -2,6 +2,13 @@
 - This is a website I created by following [the tutorial](https://fullstack.edu.vn/courses/html-css)
 - The template based on [the website on w3school](https://www.w3schools.com/w3css/tryw3css_templates_band.htm#)
 
+# How To Run It 
+- Install the [Visual Studio Code](https://code.visualstudio.com/download) + Live Server Extension
+- Download this project -> unzip
+- In Visual Studio Code, click to File -> Open folder -> select the folder that you unziped
+- Click Index.html file -> right click and select Open Live Server
+- Then you can see the website in your browser
+
 # Some Pictures About The Project
 View on Desktop
 ![desktop](https://user-images.githubusercontent.com/62549740/166406633-38abd653-0472-47ae-918c-99549507e47e.jpeg)

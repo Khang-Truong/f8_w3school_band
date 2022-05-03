@@ -10,9 +10,9 @@
 - Then you can see the website in your browser
 
 # Some Pictures About The Project
-View on Desktop
+## View on Desktop
 ![desktop](https://user-images.githubusercontent.com/62549740/166406633-38abd653-0472-47ae-918c-99549507e47e.jpeg)
-View on Ipad
+## View on Ipad
 ![iPad Air](https://user-images.githubusercontent.com/62549740/166406643-9a8d060e-6735-4438-97ef-e9a00261e098.png)
-View on Iphone
+## View on Iphone
 ![iPhone 12 Pro](https://user-images.githubusercontent.com/62549740/166406667-7b9516a9-29ac-42d1-8829-69aaddcdc58e.png)

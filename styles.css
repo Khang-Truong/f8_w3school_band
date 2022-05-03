@@ -1,0 +1,498 @@
+/* reset css */
+/* tat ca cac the, tinh luon the khong co chu */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* #wrapper{
+	overflow: hidden;
+} */
+/* commond  */
+/* tat ca cac the co chu */
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	/* set hanh vi khi cuon  */
+	scroll-behavior: smooth;
+}
+.text_white {
+	color: white !important;
+}
+.row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.col {
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.col_third {
+	width: calc(100% / 3);
+}
+.col_second {
+	width: calc(100% / 2);
+}
+.col_first {
+	width: 100%;
+}
+.mt_8 {
+	margin-top: 8px !important;
+}
+.mt_16 {
+	margin-top: 16px !important;
+}
+.text_center {
+	text-align: center !important;
+}
+.btn {
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	padding: 11px 16px;
+	display: inline-block;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+}
+.btn:hover {
+	color: #000;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.pull_right {
+	float: right !important;
+}
+
+#header {
+	height: 46px;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+#nav {
+	display: inline-block;
+}
+#nav,
+.subnav {
+	list-style: none;
+}
+#nav > li {
+	display: inline-block;
+}
+#nav li {
+	/* display: inline-block; */
+	position: relative;
+}
+
+#nav li:hover .subnav {
+	display: block;
+}
+
+/* con truc tiep */
+#nav > li > a {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#nav li a {
+	text-decoration: none;
+	line-height: 46px;
+	padding: 0 24px;
+	display: block;
+}
+
+/* chi muon anh huong cap 1 */
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+	color: black;
+	background-color: #ccc;
+}
+
+#nav .subnav {
+	display: none;
+	min-width: 160px;
+	top: 100%;
+	left: 0;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+	color: black;
+	padding: 8px 16px;
+	line-height: 22px;
+}
+
+#nav .nav_arrow_down {
+	font-size: 10px;
+}
+/* #header {
+	overflow: hidden;
+} */
+#header .mobile-menu-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+#header .mobile-menu-btn,
+#header .search_btn {
+	color: white;
+	font-size: 20px;
+	float: right;
+	height: 100%;
+	padding: 12px 24px;
+	/* thuoc tinh thay doi con tro chuot */
+	cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover {
+	background-color: gray;
+}
+
+#header .search_btn:hover {
+	background-color: red;
+}
+
+#slider {
+	position: relative;
+	margin-top: 46px;
+	/* padding de make sure height luon bang 1/2 width  */
+	padding-top: 50%;
+	background: url('/images/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text_content {
+	position: absolute;
+	bottom: 0;
+	padding: 16px 32px;
+	color: white;
+	text-align: center;
+	/* canh center cach 1 */
+	/* left: 50%;
+	transform: translateX(-50%); */
+	/* canh center cach 2 */
+	width: 100%;
+	/* canh center cach 3 */
+	/* left: 0;
+	right: 0; */
+}
+
+#slider .text_heading {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+#slider .text_des {
+	font-size: 15px;
+	margin-top: 25px;
+	text-shadow: 0 0 1px #000;
+}
+
+#content .content_section {
+	width: 800px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 64px 0 112px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+#content .section_heading {
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#content .section_sub_heading {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-style: italic;
+	opacity: 0.6;
+}
+
+#content .about_text {
+	text-align: justify;
+	line-height: 1.6;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#content .members_list {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+/* #content .member_item { */
+/* cho cung 1 hang cach 1 */
+/* float: left; */
+
+/* cho cung 1 hang cach 2 */
+/* display: inline-block; */
+/* width: calc(100% / 3); */
+/* text-align: center; */
+/* }  */
+
+#content .member_name {
+	font-size: 15px;
+}
+
+#content .member_img {
+	margin-top: 15px;
+	/* set up anh chi can set 1 trong 2 height or width  */
+	width: 154px;
+	border-radius: 4px;
+}
+
+#content .clear {
+	clear: both;
+}
+
+.tour_section {
+	background-color: black;
+}
+
+.tickets_list {
+	background-color: white;
+	margin-top: 40px;
+}
+
+.tickets_list li {
+	list-style: none;
+	color: #757575;
+	font-size: 15px;
+	padding: 11px 16px;
+	border-bottom: 1 px solid #ddd;
+}
+
+.tickets_list .sold_out {
+	background-color: #f44336;
+	color: #fff;
+	padding: 3px 4px;
+	margin-left: 16px;
+}
+
+.tickets_list .quantity {
+	float: right;
+	width: 24px;
+	height: 22px;
+	background-color: black;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 22px;
+	margin-top: -3px;
+}
+
+.place_img {
+	width: 100%;
+	/* do img display auto inline nen co khoang den o giua  */
+	display: block;
+}
+
+.place_img:hover {
+	opacity: 0.6;
+}
+.place_body {
+	padding: 16px;
+	background-color: #fff;
+	font-size: 15px;
+}
+.place_heading {
+	font-size: 15px;
+	font-weight: 600;
+}
+.place_time {
+	margin-top: 15px;
+	color: #757575;
+}
+.place_desc {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	/* tieng viet la 1.6 tieng anh la 1.4 */
+	line-height: 1.4;
+}
+
+.places_list {
+	/* ky thuat cho 2 mep cua hinh bang nhau -> dung margin am */
+	margin-top: 32px;
+	padding-bottom: 32px;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	/* con nam giua chieu cao cua cha  */
+	align-items: center;
+	/* con nam giua chieu ngang cua cha  */
+	justify-content: center;
+	display: none;
+}
+.modal.open {
+	display: flex;
+}
+.modal_container {
+	background-color: #fff;
+	width: 900px;
+	max-width: calc(100%-32px);
+	min-height: 200px;
+	position: relative;
+	animation: modalFadeIn ease 0.5s;
+}
+
+.modal_header {
+	background-color: #009688;
+	height: 130px;
+	padding: 32px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	color: #fff;
+}
+.modal_heading_icon {
+	margin-right: 16px;
+}
+
+.modal_close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	padding: 16px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.modal_close:hover {
+	opacity: 1;
+}
+.modal_body {
+	padding: 16px;
+}
+label.modal_label {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 12px;
+}
+input.modal_input {
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	margin-bottom: 24px;
+}
+#buy_tickets:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+#buy_tickets {
+	background: #009688;
+	border: none;
+	color: white;
+	width: 100%;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 12px;
+}
+
+.modal_footer {
+	padding: 16px;
+	font-size: 15px;
+	text-align: right;
+}
+
+.modal_help a {
+	color: #2196f3 !important;
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-130px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.contact_content {
+	margin-top: 48px;
+}
+.contact_info {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.contact_info i[class*='ti-'] {
+	width: 30px;
+	display: inline-block;
+}
+.contact_form {
+	font-size: 15px;
+}
+.contact_form .form_control {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+/* .contact_form .form_submit_btn{
+	background-color: #000;
+	color: #fff;
+	border:none;
+	padding: 10px 16px;
+	float: right;
+} */
+
+.map_section img {
+	/* luon bang 100% thang chua no  */
+	width: 100%;
+}
+
+#footer {
+	padding: 64px 16px;
+	text-align: center;
+}
+
+#footer .socials_list {
+	font-size: 24px;
+}
+
+#footer .socials_list a {
+	color: rgba(0, 0, 0, 0.6);
+	text-decoration: none;
+}
+
+#footer .copy_right a:hover,
+#footer .socials_list a:hover {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copy_right {
+	margin-top: 15px;
+	color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy_right a {
+	color: rgba(0, 0, 0, 0.6);
+}

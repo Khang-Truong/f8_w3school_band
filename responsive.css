@@ -1,0 +1,87 @@
+/* PC */
+@media (min-width: 1024px) {
+}
+/* table */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* button tren ipad phai co gang la 42px cho ngon tay bam de */
+
+}
+
+/* tablet and mobile */
+@media (max-width: 1023px) {
+    #nav .subnav a{
+        padding-top: 24px;
+    }
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact_form .form_control{
+        padding:15px;
+    }
+    #footer .socials_list{
+        font-size: 48px;
+    }
+    #footer .socials_list a{
+        margin: 0px 8px;
+    }
+    #footer .copy_right a{
+        padding: 24px 0px;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    #nav{
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav>li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color:white;
+        padding: 8px 42px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search_btn{
+        display: none;
+    }
+    #content .member-item{
+        width:100%;
+    }   
+    #content .member_img{
+        width:60%
+    }
+    #content .member_name {
+        padding-top: 30px;
+    }
+    #tour .place-item{
+        width:100%;
+        margin-bottom: 16px;
+    }
+    #contact .contact-item{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .width100{
+        width: 100%;
+    }
+    .mb-10{
+        margin-bottom: 10px;
+    }
+    .btn{
+        width:100%
+    }
+}
